@@ -7,6 +7,7 @@ import Home from '../Pages/Home'
 import About from '../Pages/About'
 import Contacts from '../Pages/Contacts'
 import Services from '../Pages/Services'
+import Rent from '../Pages/Rent'
 
 
 export default class Header extends Component {
@@ -32,15 +33,8 @@ export default class Header extends Component {
                                 <Nav.Link as={Link} to="/about"> About us </Nav.Link>
                                 <Nav.Link as={Link} to="/contacts"> Contacts </Nav.Link>
                                 <Nav.Link as={Link} to="/services"> Services </Nav.Link>
+                                <Nav.Link as={Link} to="/rent"> To Rent </Nav.Link>
                             </Nav>
-                            <Form className="d-flex">
-                                <FormControl
-                                    type='text'
-                                    placeholder='Search'
-                                    className='d-inline mx-2'
-                                />
-                                <Button variant="outline-info">Search</Button>
-                            </Form>
                         </Navbar.Collapse>
                     </Container>
                 </Navbar>
@@ -51,6 +45,7 @@ export default class Header extends Component {
                         <Route exact path="/about" element={<About/>} />
                         <Route exact path="/contacts" element={<Contacts/>} />
                         <Route exact path="/services" element={<Services/>} />
+                        <Route exact path="/rent" element={<Rent/>} />
                     </Routes>
                 </Router>
 
